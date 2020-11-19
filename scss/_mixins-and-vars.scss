@@ -16,6 +16,8 @@ $breakpoint_3: 320px;
 
 $padding_section: 3.75rem;
 
+$default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+
 @media screen and (max-width: $breakpoint_2) {
   $container_width: 100%;
 }
@@ -39,4 +41,36 @@ $padding_section: 3.75rem;
 .featured {
   color: $color_2;
   font-weight: bold;
+}
+
+@mixin project-description {
+  // O grid é de 12 colunas
+  grid-column: 7/13;
+  padding: 15px 30px;
+  background: $color_3;
+  color: $color_1;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #e3e4e8;
+  z-index: 2;
+}
+
+@mixin project-tools {
+  display: inline-block;
+  background: #222;
+  padding: 5px;
+  color: $color_1;
+}
+
+@mixin check-project {
+  font-size: $font_small;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid #222;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    background: #222;
+    color: $color_1;
+  }
 }
