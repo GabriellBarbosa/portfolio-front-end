@@ -1,0 +1,38 @@
+.contact__title {
+  font-size: 36px;
+  display: block;
+}
+.contact_text {
+  display: block;
+  max-width: 420px;
+  margin: 20px 0 0 0;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+.phone-number {
+  display: block;
+  margin-top: 20px;
+  font-size: $font_small;
+}
+.send-email-wrapper {
+  margin: 60px 0;
+}
+.send-email {
+  padding: 15px 30px;
+  border: 2px solid $color_3;
+  transition: all 0.1s;
+  &:hover {
+    background: $color_3;
+    color: $color_1;
+  }
+}
+
+@media screen and (max-width: $breakpoint_2) {
+  .contact__title {
+    font-size: 36px;
+  }
+  .contact__info {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+}

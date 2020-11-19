@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+a,
+html {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #222;
+}
+html {
+  background: #f3f3f3;
+}
+img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,83 @@
+.intro {
+  height: 80vh;
+  color: #222;
+}
+.intro__content {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  .intro__title {
+    font-size: $font_superLarge;
+    line-height: 1.5;
+    position: relative;
+  }
+  .intro__title [data-intro='skills']::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background: #555;
+    margin-left: 5px;
+    margin-bottom: -2px;
+    animation: animate 0.8s ease-in-out infinite;
+  }
+  .intro__hello {
+    font-size: $font_medium;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 1);
+  }
+  .intro__description {
+    font-size: $font_mediumLarge;
+    max-width: 620px;
+    margin-top: 20px;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $breakpoint_2) {
+  .intro__content {
+    .intro__hello {
+      font-weight: normal;
+    }
+    .intro__title {
+      line-height: 1.5;
+      font-size: $font_large;
+    }
+    .intro__title [data-intro='skills']::after {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 40px;
+      background: #555;
+      margin-left: 5px;
+      margin-bottom: -2px;
+      animation: animate 0.8s ease-in-out infinite;
+    }
+    .intro__description {
+      font-weight: normal;
+      font-size: $font_medium;
+      max-width: 31.25rem;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+  }
+}
+@media screen and (max-width: $breakpoint_3) {
+  .intro__content {
+    .intro__title {
+      font-size: 32px;
+    }
+  }
+}

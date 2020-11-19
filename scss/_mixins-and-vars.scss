@@ -1,0 +1,42 @@
+$container_width: 1000px;
+
+$color_1: #f3f3f3;
+$color_2: #5bcae0;
+$color_3: #222;
+
+$font_small: 0.875rem;
+$font_medium: 1rem;
+$font_mediumLarge: 1.5rem;
+$font_large: 2.25rem;
+$font_superLarge: 2.75rem;
+
+$breakpoint_1: 1030px;
+$breakpoint_2: 840px;
+$breakpoint_3: 320px;
+
+$padding_section: 3.75rem;
+
+@media screen and (max-width: $breakpoint_2) {
+  $container_width: 100%;
+}
+
+.container {
+  max-width: $container_width;
+  margin: 0 auto;
+  padding-left: 140px;
+  padding-right: 0.625rem;
+}
+
+@media screen and (max-width: $breakpoint_1) {
+  .container {
+    max-width: $container_width;
+    margin: 0 auto;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
+.green,
+.featured {
+  color: $color_2;
+  font-weight: bold;
+}
