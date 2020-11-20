@@ -13,13 +13,15 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header__wrapper">
+  <header class="header">
+    <div class="header__wrapper container">
       <div class="header__title">
-        <img src="./img/programador.svg" alt="programador com Notebook">
         <p>Gabriel Barbosa</p>
       </div>
 
@@ -29,15 +31,6 @@
         <li class="header__nav--item"><a href="#contact">Contato</a></li>
       </ul>
 
-      <div class="header__contact">
-        <a href="https://www.linkedin.com/in/gabriel-barbosa-57b87b18a/" target="_blank" class="header__contact--item">
-          <img src="./img/linkedin.svg" alt="Linkedin">
-        </a>
-        <a href="https://github.com/GabriellBarbosa" target="_blank" class="header__contact--item">
-          <img src="./img/github.svg" alt="GitHub">
-        </a>
-      </div>
-
       <div class="hamburguer__menu">
         <span class="menu__item"></span>
       </div>
@@ -46,8 +39,8 @@
 
   <section class="intro" id="home">
     <div class="intro__content container">
-      <p class="intro__hello">Hello World👋 sou o Gabriel</p>
-      <h1 class="intro__title">Desenvolvedor <br class="break_line"> <span class="green" data-intro="skills">Front-End.</span></h1>
+      <p class="intro__hello">Hello World, sou o Gabriel</p>
+      <h1 class="intro__title">Desenvolvedor <br class="break_line"> <span class="featured" data-intro="skills">Front-End.</span></h1>
       <p class="intro__description">
         Sou Programador e Desenvolvedor Front-End, com noções de Web Design
         focado em fazer boas aplicações com o layout responsivo, código limpo e reutilizável.
@@ -60,15 +53,15 @@
     <div class="portfolio__projects">
 
       <div class="portfolio__projects--item">
-        <h3 class="project__name">00. Dogs</h3>
+        <h3 class="project__name"><span class="featured">00.</span> Dogs</h3>
         <img class="project__img" src="./img/dogs.png" alt="Dogs">
         <p class="project__description">
-          Dogs é uma rede social para cachorros. Você pode fazer login, criar conta, recuperar senha postar fotos e comentários. Esse projeto foi desenvolvido em um curso de React. <span class="featured">usuário</span>: dog e <span class="featured">senha</span>: dog.
+          Dogs é uma rede social para cachorros. Você pode fazer login, criar conta, recuperar senha postar fotos e comentários. Esse projeto foi desenvolvido em um curso de React. <span class="featured-tool">usuário</span>: dog e <span class="featured-tool">senha</span>: dog.
         </p>
         <ul class="project__tools">
           <li class="project__tools--item">html</li>
           <li class="project__tools--item">css</li>
-          <li class="project__tools--item"><span class="featured">React</span></li>
+          <li class="project__tools--item"><span class="featured-tool">React</span></li>
         </ul>
         <div class="portfolio__links">
           <a class="portfolio__checkUI" href="https://gabriellbarbosa.github.io/dogs/" target="_blank">Ver a Interface</a>
@@ -77,7 +70,7 @@
       </div>
 
       <div class="portfolio__projects--item">
-        <h3 class="project__name">01. Cópia da Samsung</h3>
+        <h3 class="project__name"><span class="featured">01.</span> Cópia da Samsung</h3>
         <img class="project__img" src="./img/samsung.png" alt="Samsung">
         <p class="project__description">
           A ideia era deixar o site o mais parecido possível com o original da Samsung e deu certo.
@@ -86,7 +79,7 @@
         <ul class="project__tools">
           <li class="project__tools--item">html</li>
           <li class="project__tools--item">css</li>
-          <li class="project__tools--item"><span class="featured">Sass</span></li>
+          <li class="project__tools--item"><span class="featured-tool">Sass</span></li>
         </ul>
         <div class="portfolio__links">
           <a class="portfolio__checkUI" href="https://gabriellbarbosa.github.io/copia-samsung/" target="_blank">Ver a Interface</a>
@@ -95,7 +88,7 @@
       </div>
 
       <div class="portfolio__projects--item">
-        <h3 class="project__name">02. ReactMovies</h3>
+        <h3 class="project__name"><span class="featured">02.</span> ReactMovies</h3>
         <img class="project__img" src="./img/react.png" alt="ReactMovies">
         <p class="project__description">
           Esse projeto foi uma junção de Netflix e Amazon Prime. Todos os dados de filmes
@@ -104,7 +97,7 @@
         <ul class="project__tools">
           <li class="project__tools--item">html</li>
           <li class="project__tools--item">css</li>
-          <li class="project__tools--item"><span class="featured">React</span></li>
+          <li class="project__tools--item"><span class="featured-tool">React</span></li>
         </ul>
         <div class="portfolio__links">
           <a class="portfolio__checkUI" href="https://gabriellbarbosa.github.io/reactmovies/" target="_blank">Ver a Interface</a>
@@ -113,7 +106,7 @@
       </div>
 
       <div class="portfolio__projects--item">
-        <h3 class="project__name">03. Jogo da memória</h3>
+        <h3 class="project__name"><span class="featured">03.</span> Jogo da memória</h3>
         <img class="project__img" src="./img/memory.png" alt="Memory Game">
         <p class="project__description">
           Bora jogar? Jogo da memória feito com Vanilla JavaScript.
@@ -137,6 +130,15 @@
       Estou disponível para novas oportunidades, qualquer dúvida você pode entrar em contato que eu vou te responder.
     </p>
     <span class="phone-number">(11) 94928-8027</span>
+    <div class="contact-links-wrapper">
+      <a href="" class="linkedin">
+        <img src="./img/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="" class="github">
+        <img src="./img/github.svg" alt="GitHub">
+      </a>
+    </div>
+
     <div class="send-email-wrapper">
       <a class="send-email" href="mailto:gabriel.dev.front@gmail.com">Enviar email</a>
     </div>

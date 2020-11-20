@@ -65,11 +65,12 @@
 .portfolio__checkUI,
 .portfolio__checkCode {
   padding: 5px 10px;
-  border: 2px solid #222;
+  border: 1px solid #222;
   transition: 0.1s ease-in-out;
+  color: $color_1;
   &:hover {
-    background: #222;
-    color: $color_1;
+    background: $color_2;
+    color: $color_4;
   }
 }
 

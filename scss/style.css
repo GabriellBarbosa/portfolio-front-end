@@ -19,7 +19,6 @@ button,
 a,
 html {
   font-family: 'IBM Plex Mono', monospace;
-  color: #222;
 }
 
 html {
@@ -32,55 +31,52 @@ img {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-left: 140px;
+  padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
 @media screen and (max-width: 1030px) {
   .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding-left: 1.875rem;
     padding-right: 1.875rem;
   }
 }
 
-.green,
+.featured-tool,
 .featured {
-  color: #5bcae0;
+  color: #04d361;
   font-weight: bold;
 }
 
+.featured {
+  color: #8257e6;
+}
+
 .header {
-  color: #f3f3f3;
   position: fixed;
   padding-left: 0;
   top: 0;
-  bottom: 0;
+  right: 0;
   left: 0;
   z-index: 999;
-  background: #222;
+  background: #e1e1e6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__wrapper {
-  height: 100vh;
-  width: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
 }
 
 .header__wrapper .hamburguer__menu {
@@ -88,64 +84,37 @@ img {
 }
 
 .header__wrapper .header__title {
-  color: white;
   text-align: center;
 }
 
-.header__wrapper .header__title img {
-  margin: 0 auto;
-  width: 40px;
-  height: 40px;
-}
-
 .header__wrapper .header__title p {
-  margin-top: 10px;
-  font-size: 0.875rem;
+  color: #212025;
+  font-size: 1rem;
   opacity: 0.8;
   line-height: 1.4;
-  max-width: 100px;
 }
 
 .header__wrapper .header__nav--list {
   text-align: center;
 }
 
+.header__nav--list .header__nav--item {
+  display: inline-block;
+}
+
 .header__nav--list .header__nav--item a {
-  display: block;
-  color: #f3f3f3;
-  font-size: 1rem;
-  padding: 10px 0;
-  border-bottom: 1px solid #555;
+  display: inline-block;
+  color: #212025;
+  font-size: 0.875rem;
+  padding: 20px 0;
   opacity: 0.8;
 }
 
-.header__contact .header__contact--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 24px;
-  max-height: 24px;
-  background: #222;
-}
-
-.header__contact a + a {
-  margin-top: 20px;
+.header__nav--list .header__nav--item a {
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 1030px) {
-  .header {
-    background: #f3f3f3;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    bottom: initial;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-left: 1.875rem;
-    width: 100%;
-  }
   .header__wrapper {
     height: 60px;
     width: 100%;
@@ -154,20 +123,7 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .header__wrapper .header__contact,
-  .header__wrapper .header__title img {
-    display: none;
-  }
-  .header__wrapper .header__title {
-    color: #222;
-    text-align: center;
-  }
-  .header__wrapper .header__title p {
-    margin-top: 0;
-    max-width: initial;
-  }
   .header__wrapper .header__nav--list {
-    background: pink;
     position: absolute;
     top: 0;
     left: 0;
@@ -187,8 +143,9 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header__wrapper .header__nav--list .header__nav--item {
-    display: inline-block;
+  .header__wrapper .header__nav--list .header__nav--item a {
+    color: #e1e1e6;
+    display: block;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 10px 0;
@@ -213,7 +170,7 @@ img {
   .header__wrapper .menu__item {
     width: 40px;
     height: 4px;
-    background: #5bcae0;
+    background: #8257e6;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 6px;
@@ -224,7 +181,7 @@ img {
     display: block;
     width: 40px;
     height: 4px;
-    background: #5bcae0;
+    background: #8257e6;
     position: absolute;
     margin-top: -10px;
     -webkit-transition: all 0.3s;
@@ -276,8 +233,8 @@ img {
 }
 
 .intro {
-  height: 80vh;
-  color: #222;
+  height: 90vh;
+  color: #212025;
 }
 
 .intro__content {
@@ -298,8 +255,9 @@ img {
 }
 
 .intro__content .intro__title {
+  text-transform: uppercase;
   font-size: 2.75rem;
-  line-height: 1.5;
+  line-height: 1.4;
   position: relative;
 }
 
@@ -311,21 +269,22 @@ img {
   background: #555;
   margin-left: 5px;
   margin-bottom: -2px;
-  -webkit-animation: animate 0.8s ease-in-out infinite;
-          animation: animate 0.8s ease-in-out infinite;
+  -webkit-animation: animate 0.8s ease infinite;
+          animation: animate 0.8s ease infinite;
 }
 
 .intro__content .intro__hello {
+  font-weight: bold;
   font-size: 1rem;
-  letter-spacing: 0.1em;
-  color: black;
+  color: #8257e6;
+  opacity: 0.8;
 }
 
 .intro__content .intro__description {
-  font-size: 1.5rem;
-  max-width: 620px;
-  margin-top: 20px;
-  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 32.5rem;
+  margin-top: 30px;
+  line-height: 1.8;
   opacity: 0.8;
 }
 
@@ -417,8 +376,8 @@ img {
   -ms-grid-column-span: 6;
   grid-column: 7/13;
   padding: 15px 30px;
-  background: #222;
-  color: #f3f3f3;
+  background: #212025;
+  color: #121214;
   line-height: 1.5;
   font-size: 14px;
   color: #e3e4e8;
@@ -441,7 +400,7 @@ img {
   display: inline-block;
   background: #222;
   padding: 5px;
-  color: #f3f3f3;
+  color: #e1e1e6;
 }
 
 .portfolio__projects--item:nth-child(even) .project__name {
@@ -478,15 +437,16 @@ img {
 .portfolio__checkUI,
 .portfolio__checkCode {
   padding: 5px 10px;
-  border: 2px solid #222;
+  border: 1px solid #222;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
+  color: #121214;
 }
 
 .portfolio__checkUI:hover,
 .portfolio__checkCode:hover {
-  background: #222;
-  color: #f3f3f3;
+  background: #8257e6;
+  color: #e1e1e6;
 }
 
 @media screen and (max-width: 840px) {
@@ -543,7 +503,7 @@ img {
   .portfolio__checkUI:hover,
   .portfolio__checkCode:hover {
     background: #222;
-    color: #f3f3f3;
+    color: #121214;
   }
 }
 
@@ -585,20 +545,40 @@ img {
   font-size: 0.875rem;
 }
 
+.contact-links-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-links-wrapper .linkedin,
+.contact-links-wrapper .github {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
 .send-email-wrapper {
   margin: 60px 0;
 }
 
 .send-email {
   padding: 15px 30px;
-  border: 2px solid #222;
+  border: 2px solid #121214;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  color: #121214;
+  font-weight: bold;
 }
 
 .send-email:hover {
-  background: #222;
-  color: #f3f3f3;
+  background: #8257e6;
+  color: #121214;
 }
 
 @media screen and (max-width: 840px) {

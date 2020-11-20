@@ -1,8 +1,9 @@
-$container_width: 1000px;
+$container_width: 900px;
 
-$color_1: #f3f3f3;
-$color_2: #5bcae0;
-$color_3: #222;
+$color_1: #121214;
+$color_2: #8257e6;
+$color_3: #212025;
+$color_4: #e1e1e6;
 
 $font_small: 0.875rem;
 $font_medium: 1rem;
@@ -25,7 +26,7 @@ $default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
 .container {
   max-width: $container_width;
   margin: 0 auto;
-  padding-left: 140px;
+  padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
@@ -37,10 +38,13 @@ $default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
     padding-right: 1.875rem;
   }
 }
-.green,
+.featured-tool,
+.featured {
+  color: #04d361;
+  font-weight: bold;
+}
 .featured {
   color: $color_2;
-  font-weight: bold;
 }
 
 @mixin project-description {
@@ -59,7 +63,7 @@ $default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
   background: #222;
   padding: 5px;
-  color: $color_1;
+  color: $color_4;
 }
 
 @mixin check-project {

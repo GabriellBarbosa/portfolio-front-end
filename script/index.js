@@ -36,19 +36,24 @@ const interval = setInterval(() => {
 
 writeEffect();
 
-// MENU MOBILE ==================================================================
+// MENU MOBILE
 
 const menu_hamburguer = document.querySelector('.hamburguer__menu');
 
 const nav_list = document.querySelector('.header__nav--list');
 
-menu_hamburguer.addEventListener('click', ({ currentTarget }) => {
+const toggleMenuMobile = ({ currentTarget }) => {
   const currentTargetChild = currentTarget.firstElementChild;
   currentTargetChild.classList.toggle('active');
   nav_list.classList.toggle('open');
-});
+};
+
+menu_hamburguer.addEventListener('click', toggleMenuMobile);
 
 // scroolToSection
+
+const menu = document.querySelector('.menu__item');
+const nav = document.querySelector('.header__nav--list');
 
 const links = document.querySelectorAll('a[href^="#"]');
 const scrollToSection = (event) => {
@@ -59,6 +64,8 @@ const scrollToSection = (event) => {
     block: 'start',
     behavior: 'smooth',
   });
+  menu.classList.remove('active');
+  nav.classList.remove('open');
 };
 links.forEach((link) => {
   link.addEventListener('click', scrollToSection);

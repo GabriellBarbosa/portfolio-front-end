@@ -1,6 +1,6 @@
 .intro {
-  height: 80vh;
-  color: #222;
+  height: 90vh;
+  color: $color_3;
 }
 .intro__content {
   height: inherit;
@@ -9,8 +9,9 @@
   align-items: start;
   justify-content: center;
   .intro__title {
+    text-transform: uppercase;
     font-size: $font_superLarge;
-    line-height: 1.5;
+    line-height: 1.4;
     position: relative;
   }
   .intro__title [data-intro='skills']::after {
@@ -21,18 +22,19 @@
     background: #555;
     margin-left: 5px;
     margin-bottom: -2px;
-    animation: animate 0.8s ease-in-out infinite;
+    animation: animate 0.8s ease infinite;
   }
   .intro__hello {
+    font-weight: bold;
     font-size: $font_medium;
-    letter-spacing: 0.1em;
-    color: rgba(0, 0, 0, 1);
+    color: $color_2;
+    opacity: 0.8;
   }
   .intro__description {
-    font-size: $font_mediumLarge;
-    max-width: 620px;
-    margin-top: 20px;
-    line-height: 1.5;
+    font-size: $font_medium;
+    max-width: 32.5rem;
+    margin-top: 30px;
+    line-height: 1.8;
     opacity: 0.8;
   }
 }
