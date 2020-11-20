@@ -304,7 +304,7 @@ img {
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 940px) {
   .intro__content .intro__hello {
     font-weight: normal;
   }
@@ -375,12 +375,11 @@ img {
 }
 
 .portfolio__projects--item .project__description {
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 5;
-  grid-column: 8/13;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
   padding: 15px 30px;
-  background: -webkit-gradient(linear, left top, right top, from(#6b08dc), to(#8257e6));
-  background: linear-gradient(to right, #6b08dc, #8257e6);
+  background: #212025;
   color: #121214;
   line-height: 1.6;
   font-size: 14px;
@@ -397,7 +396,7 @@ img {
 .portfolio__projects--item .project__tools {
   position: absolute;
   right: 0;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 .portfolio__projects--item .project__tools .project__tools--item {
@@ -420,10 +419,8 @@ img {
 
 .portfolio__projects--item:nth-child(even) .project__description {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
-  background: -webkit-gradient(linear, right top, left top, from(#6b08dc), to(#8257e6));
-  background: linear-gradient(to left, #6b08dc, #8257e6);
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
 }
 
 .portfolio__projects--item:nth-child(even) .project__tools {
@@ -455,7 +452,7 @@ img {
   color: #e1e1e6;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 940px) {
   .portfolio__projects--item {
     margin-bottom: 200px;
   }
@@ -587,7 +584,7 @@ img {
   color: #121214;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 940px) {
   .contact__title {
     font-size: 36px;
   }
