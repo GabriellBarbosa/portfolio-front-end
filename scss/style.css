@@ -18,7 +18,7 @@ a {
 button,
 a,
 html {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Recursive', sans-serif;
 }
 
 html {
@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -39,7 +39,7 @@ img {
 
 @media screen and (max-width: 1030px) {
   .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 1.875rem;
     padding-right: 1.875rem;
@@ -53,18 +53,17 @@ img {
 }
 
 .featured {
-  color: #8257e6;
+  color: #6b08dc;
 }
 
 .header {
   position: fixed;
-  padding-left: 0;
+  padding: 10px 0;
   top: 0;
   right: 0;
   left: 0;
   z-index: 999;
-  background: #e1e1e6;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #6b08dc;
 }
 
 .header__wrapper {
@@ -88,10 +87,10 @@ img {
 }
 
 .header__wrapper .header__title p {
-  color: #212025;
-  font-size: 1rem;
-  opacity: 0.8;
+  color: #e1e1e6;
+  font-size: 1.5rem;
   line-height: 1.4;
+  font-weight: bold;
 }
 
 .header__wrapper .header__nav--list {
@@ -104,10 +103,9 @@ img {
 
 .header__nav--list .header__nav--item a {
   display: inline-block;
-  color: #212025;
+  color: #e1e1e6;
   font-size: 0.875rem;
-  padding: 20px 0;
-  opacity: 0.8;
+  padding: 10px 0;
 }
 
 .header__nav--list .header__nav--item a {
@@ -170,7 +168,7 @@ img {
   .header__wrapper .menu__item {
     width: 40px;
     height: 4px;
-    background: #8257e6;
+    background: #e1e1e6;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border-radius: 6px;
@@ -181,7 +179,7 @@ img {
     display: block;
     width: 40px;
     height: 4px;
-    background: #8257e6;
+    background: #e1e1e6;
     position: absolute;
     margin-top: -10px;
     -webkit-transition: all 0.3s;
@@ -233,11 +231,11 @@ img {
 }
 
 .intro {
-  height: 90vh;
   color: #212025;
 }
 
 .intro__content {
+  padding-top: 10rem;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +254,7 @@ img {
 
 .intro__content .intro__title {
   text-transform: uppercase;
-  font-size: 2.75rem;
+  font-size: 4rem;
   line-height: 1.4;
   position: relative;
 }
@@ -265,7 +263,7 @@ img {
   content: '';
   display: inline-block;
   width: 3px;
-  height: 40px;
+  height: 60px;
   background: #555;
   margin-left: 5px;
   margin-bottom: -2px;
@@ -276,7 +274,7 @@ img {
 .intro__content .intro__hello {
   font-weight: bold;
   font-size: 1rem;
-  color: #8257e6;
+  color: #6b08dc;
   opacity: 0.8;
 }
 
@@ -340,8 +338,13 @@ img {
   }
 }
 
+.portfolio {
+  padding-top: 10px;
+}
+
 .portfolio__title {
   font-size: 2.25rem;
+  margin-top: 3.75rem;
   margin-bottom: 3.75rem;
 }
 
@@ -372,13 +375,14 @@ img {
 }
 
 .portfolio__projects--item .project__description {
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 6;
-  grid-column: 7/13;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8/13;
   padding: 15px 30px;
-  background: #212025;
+  background: -webkit-gradient(linear, left top, right top, from(#6b08dc), to(#8257e6));
+  background: linear-gradient(to right, #6b08dc, #8257e6);
   color: #121214;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 14px;
   color: #e3e4e8;
   z-index: 2;
@@ -393,7 +397,7 @@ img {
 .portfolio__projects--item .project__tools {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 50px;
 }
 
 .portfolio__projects--item .project__tools .project__tools--item {
@@ -416,8 +420,10 @@ img {
 
 .portfolio__projects--item:nth-child(even) .project__description {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  background: -webkit-gradient(linear, right top, left top, from(#6b08dc), to(#8257e6));
+  background: linear-gradient(to left, #6b08dc, #8257e6);
 }
 
 .portfolio__projects--item:nth-child(even) .project__tools {
@@ -445,7 +451,7 @@ img {
 
 .portfolio__checkUI:hover,
 .portfolio__checkCode:hover {
-  background: #8257e6;
+  background: #6b08dc;
   color: #e1e1e6;
 }
 
@@ -577,7 +583,7 @@ img {
 }
 
 .send-email:hover {
-  background: #8257e6;
+  background: #6b08dc;
   color: #121214;
 }
 

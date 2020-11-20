@@ -1,5 +1,9 @@
+.portfolio {
+  padding-top: 10px;
+}
 .portfolio__title {
   font-size: $font_large;
+  margin-top: $padding_section;
   margin-bottom: $padding_section;
 }
 .portfolio__projects--item {
@@ -29,7 +33,7 @@
   .project__tools {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 50px;
     .project__tools--item {
       @include project-tools;
     }
@@ -45,7 +49,8 @@
     grid-column: 5/13;
   }
   .project__description {
-    grid-column: 1/7;
+    grid-column: 1/6;
+    background: linear-gradient(to left, $color_2, #8257e6);
   }
   .project__tools {
     position: absolute;

@@ -1,8 +1,8 @@
 .intro {
-  height: 90vh;
   color: $color_3;
 }
 .intro__content {
+  padding-top: 10rem;
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   justify-content: center;
   .intro__title {
     text-transform: uppercase;
-    font-size: $font_superLarge;
+    font-size: 4rem;
     line-height: 1.4;
     position: relative;
   }
@@ -18,7 +18,7 @@
     content: '';
     display: inline-block;
     width: 3px;
-    height: 40px;
+    height: 60px;
     background: #555;
     margin-left: 5px;
     margin-bottom: -2px;
