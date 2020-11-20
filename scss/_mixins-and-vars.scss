@@ -12,7 +12,7 @@ $font_large: 2.25rem;
 $font_superLarge: 2.75rem;
 
 $breakpoint_1: 1030px;
-$breakpoint_2: 840px;
+$breakpoint_2: 940px;
 $breakpoint_3: 320px;
 
 $padding_section: 3.75rem;
@@ -49,9 +49,9 @@ $default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
 
 @mixin project-description {
   // O grid é de 12 colunas
-  grid-column: 8/13;
+  grid-column: 7/13;
   padding: 15px 30px;
-  background: linear-gradient(to right, $color_2, #8257e6);
+  background: $color_3;
   color: $color_1;
   line-height: 1.6;
   font-size: 14px;

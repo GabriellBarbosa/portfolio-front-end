@@ -33,7 +33,7 @@
   .project__tools {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 0px;
     .project__tools--item {
       @include project-tools;
     }
@@ -49,8 +49,7 @@
     grid-column: 5/13;
   }
   .project__description {
-    grid-column: 1/6;
-    background: linear-gradient(to left, $color_2, #8257e6);
+    grid-column: 1/7;
   }
   .project__tools {
     position: absolute;
