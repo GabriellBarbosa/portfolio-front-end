@@ -1,7 +1,7 @@
-$container_width: 900px;
+$container_width: 1200px;
 
 $color_1: #121214;
-$color_2: #8257e6;
+$color_2: #6b08dc;
 $color_3: #212025;
 $color_4: #e1e1e6;
 
@@ -49,11 +49,11 @@ $default_shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
 
 @mixin project-description {
   // O grid é de 12 colunas
-  grid-column: 7/13;
+  grid-column: 8/13;
   padding: 15px 30px;
-  background: $color_3;
+  background: linear-gradient(to right, $color_2, #8257e6);
   color: $color_1;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 14px;
   color: #e3e4e8;
   z-index: 2;
